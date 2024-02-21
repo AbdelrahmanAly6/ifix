@@ -69,7 +69,7 @@ const Contact = () => {
               </div>
             </div>
 
-            <div class="col-lg-6 p-5">
+            <div class="col-lg-6">
               <div class="contact-title fw-bold">
                 <h1 className="fw-bold contact-title">Send Us a Message</h1>
               </div>

@@ -76,7 +76,7 @@ function App() {
                   className="ra"
                   removeArrowOnDeviceType={["tablet", "mobile"]}
                 >
-                  <Carousel partialVisible={false} responsive={responsive}>
+                  <Carousel responsive={responsive}>
                     {product}
                     <SeeMore />
                   </Carousel>

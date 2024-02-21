@@ -73,7 +73,7 @@ const Checkout = () => {
       alert("Invalid expiration year.");
       return;
     }
-    setSubmittedBillingInfo(billingInfo);
+
     if (
       !billingInfo.fullName ||
       !billingInfo.email ||
@@ -89,19 +89,27 @@ const Checkout = () => {
       alert("Please fill in all fields.");
       return;
     }
+
+    const phoneNumberRegex = /^(01)(0|1|2|5)\d{8}$/;
+    if (!phoneNumberRegex.test(billingInfo.phoneNumber)) {
+      alert("Please enter a valid Egyptian phone number.");
+      return;
+    }
+
+    setSubmittedBillingInfo(billingInfo);
   };
 
   const allFieldsFilled =
-    billingInfo.fullName &&
-    billingInfo.email &&
-    billingInfo.address &&
-    billingInfo.city &&
-    billingInfo.phoneNumber &&
-    billingInfo.cardName &&
-    billingInfo.cardNumber &&
-    billingInfo.expm &&
-    billingInfo.expy &&
-    billingInfo.cvv;
+    submittedBillingInfo.fullName &&
+    submittedBillingInfo.email &&
+    submittedBillingInfo.address &&
+    submittedBillingInfo.city &&
+    submittedBillingInfo.phoneNumber &&
+    submittedBillingInfo.cardName &&
+    submittedBillingInfo.cardNumber &&
+    submittedBillingInfo.expm &&
+    submittedBillingInfo.expy &&
+    submittedBillingInfo.cvv;
 
   const handleProceedToCheckout = () => {
     if (!allFieldsFilled) {

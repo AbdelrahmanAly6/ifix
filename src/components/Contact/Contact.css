@@ -60,3 +60,9 @@
 .contact-row {
   margin: 4.5rem !important;
 }
+
+@media (max-width: 590px) {
+  .contact-form input {
+    width: 100%;
+  }
+}
