@@ -147,7 +147,7 @@ const Checkout = () => {
                         <span>full name</span>
                         <input
                           type="text"
-                          placeholder="Your Name"
+                          placeholder="👤 Your Name"
                           name="fullName"
                           value={billingInfo.fullName}
                           onChange={handleInputChange}
@@ -157,7 +157,7 @@ const Checkout = () => {
                         <span>email</span>
                         <input
                           type="email"
-                          placeholder="example@example.com"
+                          placeholder="📧 example@example.com"
                           name="email"
                           value={billingInfo.email}
                           onChange={handleInputChange}
@@ -167,7 +167,7 @@ const Checkout = () => {
                         <span>address</span>
                         <input
                           type="text"
-                          placeholder="Address Line 1"
+                          placeholder="📫 Address Line 1"
                           name="address"
                           value={billingInfo.address}
                           onChange={handleInputChange}
@@ -177,7 +177,7 @@ const Checkout = () => {
                         <span>city</span>
                         <input
                           type="text"
-                          placeholder="EX: Cairo"
+                          placeholder="🏙 EX: Cairo"
                           name="city"
                           value={billingInfo.city}
                           onChange={handleInputChange}
@@ -188,7 +188,7 @@ const Checkout = () => {
                         <span>Phone Number</span>
                         <input
                           type="text"
-                          placeholder="01xxxxxxxxx"
+                          placeholder="📞 01xxxxxxxxx"
                           name="phoneNumber"
                           value={billingInfo.phoneNumber}
                           onChange={handleInputChange}
@@ -207,7 +207,7 @@ const Checkout = () => {
                         <span>name on card</span>
                         <input
                           type="text"
-                          placeholder="Your Name"
+                          placeholder="👤 Your Name"
                           onChange={handleInputChange}
                           name="cardName"
                           value={billingInfo.cardName}
@@ -217,7 +217,7 @@ const Checkout = () => {
                         <span>card number</span>
                         <input
                           type="text"
-                          placeholder="0000 0000 0000 0000"
+                          placeholder="💳 0000 0000 0000 0000"
                           name="cardNumber"
                           value={billingInfo.cardNumber}
                           onChange={handleInputChange}
@@ -228,7 +228,7 @@ const Checkout = () => {
                           <span>exp year</span>
                           <input
                             type="number"
-                            placeholder="YY"
+                            placeholder="📅 YY"
                             onChange={handleInputChange}
                             name="expy"
                             value={billingInfo.expy}
@@ -238,7 +238,7 @@ const Checkout = () => {
                           <span>exp month</span>
                           <input
                             type="number"
-                            placeholder="MM"
+                            placeholder="📆 MM"
                             onChange={handleInputChange}
                             name="expm"
                             value={billingInfo.expm}
@@ -251,7 +251,7 @@ const Checkout = () => {
                         <span>CVV</span>
                         <input
                           type="number"
-                          placeholder="0000"
+                          placeholder="🔒 0000"
                           onChange={handleInputChange}
                           name="cvv"
                           value={billingInfo.cvv}
