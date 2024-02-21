@@ -1,0 +1,58 @@
+.card {
+  background: #eee;
+  cursor: pointer;
+  padding: 0.9rem;
+  transition: var(--main-transition);
+  box-shadow: 0px 3px 5px 0px var(--shadow-color);
+  border-radius: 1rem;
+  position: relative;
+  margin: 3rem auto !important;
+  user-select: none;
+  z-index: 999;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card-title {
+  font-size: 25px;
+  color: var(--sec-color) !important;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 25px;
+}
+
+.atc {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: var(--pri-color);
+  color: white;
+  transition: var(--main-transition);
+  cursor: pointer;
+  font-size: 20px;
+  border: none !important;
+}
+
+.atc:hover {
+  background-color: var(--hover-color);
+  scale: 1.1;
+}
+
+.atw {
+  font-size: 22px;
+  position: absolute;
+  right: 20px;
+  cursor: pointer;
+  transition: var(--main-transition);
+}
+
+.atw:hover {
+  transform: scale(1.2);
+}
+
+.incart {
+  color: var(--pri-color);
+}

@@ -1,0 +1,17 @@
+.success {
+  display: flex;
+  height: 100vh;
+  text-transform: capitalize;
+  font-size: 2rem;
+  background-color: #eee;
+}
+
+.success h1 {
+  font-size: 4rem;
+}
+
+.check-icon {
+  color: green;
+  font-size: 10rem;
+  margin-bottom: 1rem;
+}

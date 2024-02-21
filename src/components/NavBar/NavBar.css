@@ -1,0 +1,75 @@
+.navbar {
+  background-color: var(--sec-color);
+  padding: 0 !important;
+  font-size: 20px;
+}
+
+.navbar-brand img {
+  width: 6.25rem;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.nav-link {
+  color: white !important;
+  transition: var(--main-transition) !important;
+  margin-right: 2rem !important;
+}
+
+.nav-link:hover {
+  color: var(--pri-color) !important;
+}
+
+.user:hover {
+  color: #00a0bd !important;
+}
+
+.wishlist:hover {
+  color: red !important;
+}
+
+.cart:hover {
+  color: yellow !important;
+}
+
+.search {
+  margin-right: 2rem;
+}
+
+.form-control {
+  width: 15rem !important;
+}
+
+.search-btn {
+  transition: var(--main-transition) !important;
+  color: var(--pri-color) !important;
+  border-color: var(--pri-color) !important;
+}
+
+.search-btn:hover {
+  background-color: var(--pri-color) !important;
+  color: white !important;
+}
+
+.cart-counter {
+  background-color: red;
+  border-radius: 50%;
+  width: 1.2rem;
+  height: 1.2rem;
+  display: inline-block;
+  text-align: center;
+  line-height: 1;
+  position: absolute;
+  top: 7px;
+  right: 7px;
+}
+
+.username {
+  cursor: default;
+}
+
+.username:hover {
+  color: white !important;
+}

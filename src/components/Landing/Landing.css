@@ -1,0 +1,45 @@
+.landing {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../../../public/background.jpg);
+  background-position: center;
+  background-size: cover;
+  min-height: 80vh;
+  user-select: none;
+  animation: loading-animation 1s;
+}
+
+@keyframes loading-animation {
+  from {
+    opacity: 0;
+    top: 50px;
+  }
+  to {
+    opacity: 1;
+    top: 0;
+  }
+}
+
+.landing h1 {
+  font-size: 4rem;
+}
+
+.landing p {
+  font-size: 1.875rem;
+}
+
+.landing span {
+  color: var(--pri-color);
+}
+
+.landing-btn {
+  font-size: 1.5rem;
+  background-color: var(--pri-color);
+  transition: var(--main-transition);
+  text-align: center;
+  border: none;
+}
+
+.landing-btn:hover {
+  background-color: var(--hover-color);
+  scale: 1.1;
+}

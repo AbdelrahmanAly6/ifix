@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+.checkout {
+  background-color: #eee;
+  font-family: "Poppins", sans-serif;
+  text-transform: capitalize;
+  animation: loading-animation 1s;
+}
+.inputBox input::-webkit-outer-spin-button,
+.inputBox input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.checkout-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.4rem;
+  min-height: 100vh;
+}
+
+.checkout-container form {
+  padding: 1.5rem;
+  width: 39rem;
+  background: #eee;
+  /* box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); */
+}
+
+.checkout-container form .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+}
+
+.checkout-container form .row .col {
+  flex: 1 1 14rem;
+}
+
+.checkout-container form .row .col .title {
+  font-size: 1.5rem;
+  color: #333;
+  padding-bottom: 0.3rem;
+  text-transform: uppercase;
+}
+
+.checkout-container form .row .col .inputBox {
+  margin: 0.9rem 0;
+}
+
+.checkout-container form .row .col .inputBox span {
+  margin-bottom: 0.6rem;
+  display: block;
+}
+
+.checkout-container form .row .col .inputBox input {
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 0.6rem 0.9rem;
+  font-size: 0.9rem;
+  text-transform: none;
+}
+
+.checkout-container form .row .col .inputBox input::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.checkout-container form .row .col .inputBox input:focus {
+  border: 1px solid #000;
+}
+
+.checkout-container form .row .col .flex {
+  display: flex;
+  gap: 0.9rem;
+}
+
+.checkout-container form .row .col .flex .inputBox {
+  margin-top: 0.3rem;
+}
+
+.checkout-container form .row .col .inputBox img {
+  height: 1.9rem;
+  margin-top: 0.3rem;
+  filter: drop-shadow(0 0 1px #000);
+}
+
+.checkout-container form .submit-btn {
+  width: 100%;
+  padding: 0.7rem;
+  font-size: 1rem;
+  background: var(--pri-color);
+  color: #fff;
+  margin-top: 5px;
+  cursor: pointer;
+  transition: var(--main-transition);
+}
+
+.checkout-container form .submit-btn:hover {
+  background: var(--hover-color);
+}
+
+.checkout-cart {
+  margin-top: 3rem;
+}
+
+.billing-address {
+  text-transform: none !important;
+}
+
+.billing-address p {
+  font-size: 0.9rem;
+}
+
+.checkout-btn {
+  padding: 0.7rem;
+  font-size: 1rem;
+  background: var(--pri-color);
+  color: #fff;
+  margin-top: 5px;
+  cursor: pointer;
+  margin-left: 37%;
+  transition: var(--main-transition);
+}
+
+.checkout-btn:hover {
+  background: var(--hover-color);
+}
+
+.increase-button,
+.decrease-button {
+  color: white;
+  font-size: 1.2rem;
+  background-color: var(--pri-color);
+  border: none;
+  transition: var(--main-transition);
+}
+.increase-button:hover,
+.decrease-button:hover {
+  color: white;
+  background-color: var(--hover-color);
+}
+
+.increase-button {
+  padding: 0.1rem 0.5rem;
+}
+
+.decrease-button {
+  font-size: 1.3rem;
+  padding: 0 0.5rem;
+}
+
+.checkout-logo img {
+  cursor: pointer;
+  height: 7rem;
+  position: absolute;
+}
+
+@media (max-width: 557px) {
+  .checkout-logo img {
+    position: relative;
+  }
+}
+
+.noproducts {
+  display: flex;
+  height: 100vh;
+}

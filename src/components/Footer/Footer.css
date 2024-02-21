@@ -1,0 +1,29 @@
+.main-footer {
+  background-color: var(--sec-color);
+  user-select: none;
+}
+
+.footer-contact {
+  user-select: text;
+}
+
+.ft-links a {
+  text-decoration: none;
+  transition: var(--main-transition);
+}
+
+.ft-links a:hover {
+  color: var(--pri-color) !important;
+}
+
+.ft-links p {
+  margin: 0;
+}
+
+.footer-contact p {
+  margin-bottom: 1rem;
+}
+
+.footer-connect {
+  color: var(--pri-color);
+}

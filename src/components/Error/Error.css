@@ -1,0 +1,11 @@
+.error {
+  display: flex;
+  height: 100vh;
+  text-transform: capitalize;
+  font-size: 2rem;
+  background-color: #eee;
+}
+
+.error h1 {
+  font-size: 4rem;
+}
