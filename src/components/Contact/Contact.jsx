@@ -61,7 +61,7 @@ const Contact = () => {
                   <p>
                     {" "}
                     <FontAwesomeIcon icon={faGlobe} className="me-3" />
-                    www.contact.com
+                    ifix-app.netlify.app/
                   </p>
                 </div>
               </div>
