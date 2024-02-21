@@ -1,6 +1,6 @@
 .contact {
   animation: loading-animation 1s;
-  min-height: 100vh;
+  padding-top: 1.5rem;
 }
 .contact-title {
   color: var(--pri-color);
