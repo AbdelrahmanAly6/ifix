@@ -14,7 +14,7 @@ import Footer from "./components/Footer/Footer";
 import SignPage from "./components/SignPage/SignPage";
 import { Route, Routes } from "react-router-dom";
 import Products from "./components/Products/Products";
-import Checkout from "./components/checkout/checkout";
+import Checkout from "./components/Checkout/Checkout";
 import ShoppingCart from "./components/ShoppingCart/ShoppingCart";
 import Contact from "./components/Contact/Contact";
 import { CartProvider } from "react-use-cart";
