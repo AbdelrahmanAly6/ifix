@@ -77,12 +77,7 @@ const Footer = () => {
                 <h3 className="text-uppercase fw-bold mb-4">Useful links</h3>
                 <p>
                   <Link to="/signpage#" className="text-reset fs-5">
-                    Sign Up
-                  </Link>
-                </p>
-                <p>
-                  <Link to="/signpage#" className="text-reset fs-5">
-                    Sign In
+                    Sign Page
                   </Link>
                 </p>
               </div>

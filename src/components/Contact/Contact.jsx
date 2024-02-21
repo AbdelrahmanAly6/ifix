@@ -9,11 +9,13 @@ import {
   faGlobe,
 } from "@fortawesome/free-solid-svg-icons";
 import { useForm, ValidationError } from "@formspree/react";
+import { useNavigate } from "react-router-dom";
 
 const Contact = () => {
   const [state, handleSubmit] = useForm("xeqygwwa");
+  const navigate = useNavigate();
   if (state.succeeded) {
-    alert("Thanks for Contacting Us!");
+    navigate("/received");
   }
   return (
     <>

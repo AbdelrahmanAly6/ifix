@@ -16,6 +16,7 @@ const SignPage = () => {
   const [errorMessage, setErrorMessage] = useState("");
   const navigate = useNavigate();
   const { setUsername, username } = useUsername();
+  const [isSignInActive, setIsSignInActive] = useState(true);
 
   const handleSignIn = (e) => {
     e.preventDefault();
@@ -33,19 +34,6 @@ const SignPage = () => {
     alert("Email: admin@admin.com\nPassword: 123456");
   };
 
-  window.addEventListener("load", function () {
-    const container = document.getElementById("sign-container");
-    const registerBtn = document.getElementById("register");
-    const loginBtn = document.getElementById("login");
-    registerBtn.addEventListener("click", () => {
-      container.classList.add("active");
-    });
-
-    loginBtn.addEventListener("click", () => {
-      container.classList.remove("active");
-    });
-  });
-
   return (
     <>
       <div className="sign">
@@ -54,21 +42,21 @@ const SignPage = () => {
             <img src={logo} />
           </Link>
         </div>
-        <div class="sign-container" id="sign-container">
-          <div class="form-container sign-up">
+        <div className={`sign-container ${isSignInActive ? "" : "active"}`}>
+          <div className="form-container sign-up">
             <form>
               <h2>Create Account</h2>
-              <div class="sign-social-icons">
-                <a href="#" class="icon">
+              <div className="sign-social-icons">
+                <a href="#" className="icon">
                   <FontAwesomeIcon icon={faGoogle} />
                 </a>
-                <a href="#" class="icon">
+                <a href="#" className="icon">
                   <FontAwesomeIcon icon={faFacebookF} />
                 </a>
-                <a href="#" class="icon">
+                <a href="#" className="icon">
                   <FontAwesomeIcon icon={faTwitter} />
                 </a>
-                <a href="#" class="icon">
+                <a href="#" className="icon">
                   <FontAwesomeIcon icon={faApple} />
                 </a>
               </div>
@@ -79,20 +67,24 @@ const SignPage = () => {
               <button>Sign Up</button>
             </form>
           </div>
-          <div class="form-container sign-in">
+          <div
+            className={`form-container sign-in ${
+              isSignInActive ? "active" : ""
+            }`}
+          >
             <form>
               <h1>Sign In</h1>
-              <div class="sign-social-icons">
-                <a href="#" class="icon">
+              <div className="sign-social-icons">
+                <a href="#" className="icon">
                   <FontAwesomeIcon icon={faGoogle} />
                 </a>
-                <a href="#" class="icon">
+                <a href="#" className="icon">
                   <FontAwesomeIcon icon={faFacebookF} />
                 </a>
-                <a href="#" class="icon">
+                <a href="#" className="icon">
                   <FontAwesomeIcon icon={faTwitter} />
                 </a>
-                <a href="#" class="icon">
+                <a href="#" className="icon">
                   <FontAwesomeIcon icon={faApple} />
                 </a>
               </div>
@@ -116,22 +108,38 @@ const SignPage = () => {
               {errorMessage && <p style={{ color: "red" }}>{errorMessage}</p>}
             </form>
           </div>
-          <div class="toggle-container">
-            <div class="toggle">
-              <div class="toggle-panel toggle-left">
+          <div className="toggle-container">
+            <div className="toggle">
+              <div
+                className={`toggle-panel toggle-left ${
+                  isSignInActive ? "active" : ""
+                }`}
+              >
                 <h1>Start Your Fixing Journey</h1>
                 <p>
                   Register with your personal details to use all of site
                   features
                 </p>
-                <button class="hidden" id="login">
+                <button
+                  className="hidden"
+                  id="login"
+                  onClick={() => setIsSignInActive(true)}
+                >
                   Sign In
                 </button>
               </div>
-              <div class="toggle-panel toggle-right">
+              <div
+                className={`toggle-panel toggle-right ${
+                  isSignInActive ? "" : "active"
+                }`}
+              >
                 <h1>Welcome Back!</h1>
                 <p>Enter your personal details to use all of site features</p>
-                <button class="hidden" id="register">
+                <button
+                  className="hidden"
+                  id="register"
+                  onClick={() => setIsSignInActive(false)}
+                >
                   Sign Up
                 </button>
               </div>
@@ -139,7 +147,7 @@ const SignPage = () => {
           </div>
         </div>
         <div className="sign-footer">
-          <p class="text-center text-white">
+          <p className="text-center text-white">
             &copy; 2024 iFix. All rights reserved
           </p>
         </div>

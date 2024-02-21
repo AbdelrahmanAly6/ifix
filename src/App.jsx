@@ -21,6 +21,7 @@ import { CartProvider } from "react-use-cart";
 import Success from "./components/Success/Success";
 import { UsernameProvider } from "./components/usernameProvider";
 import Error from "./components/Error/Error";
+import Received from "./components/Received/Received";
 function App() {
   const product = productData.map((item) => (
     <Recently
@@ -112,7 +113,8 @@ function App() {
             }
           />
           <Route path="/success" element={<Success />}></Route>
-          <Route path="*" element={<Error></Error>}></Route>
+          <Route path="/received" element={<Received />}></Route>
+          <Route path="*" element={<Error />}></Route>
         </Routes>
       </CartProvider>
     </UsernameProvider>
