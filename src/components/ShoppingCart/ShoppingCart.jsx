@@ -8,7 +8,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Table from "react-bootstrap/Table";
 import NavBar from "../NavBar/NavBar";
-import { Link } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 
 const ShoppingCart = () => {
   const [show, setShow] = useState(false);
@@ -92,7 +92,7 @@ const ShoppingCart = () => {
                   <div className="row-auto ms-auto mt-4">
                     <h2>Total Price: {cartTotal}£</h2>
                   </div>
-                  <Link className="col-auto mt-3 gt-checkout" to="/checkout">
+                  <Link className="col-auto mt-3 gt-checkout" to="/checkout#">
                     <Button>Checkout</Button>
                   </Link>
                 </>
