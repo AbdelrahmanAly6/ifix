@@ -130,20 +130,13 @@
   background-color: var(--pri-color);
   border: none;
   transition: var(--main-transition);
+  font-weight: bold;
+  padding: 0.1rem 0.5rem;
 }
 .increase-button:hover,
 .decrease-button:hover {
   color: white;
   background-color: var(--hover-color);
-}
-
-.increase-button {
-  padding: 0.1rem 0.5rem;
-}
-
-.decrease-button {
-  font-size: 1.3rem;
-  padding: 0 0.5rem;
 }
 
 .checkout-logo img {
