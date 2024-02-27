@@ -49,11 +49,8 @@ function App() {
                 <NavBar username={username} />
                 <Landing />
                 <Title />
-                <div
-                  className="ra"
-                  removeArrowOnDeviceType={["tablet", "mobile"]}
-                >
-                  <Carousel partialVisible={false} responsive={responsive}>
+                <div className="ra">
+                  <Carousel responsive={responsive}>
                     {product}
                     <SeeMore />
                   </Carousel>
@@ -72,10 +69,7 @@ function App() {
                 <NavBar username={username} />
                 <Landing />
                 <Title />
-                <div
-                  className="ra"
-                  removeArrowOnDeviceType={["tablet", "mobile"]}
-                >
+                <div className="ra">
                   <Carousel responsive={responsive}>
                     {product}
                     <SeeMore />

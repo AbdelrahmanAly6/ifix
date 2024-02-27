@@ -38,11 +38,11 @@ export const productData = [
 ];
 
 export const responsive = {
-  superLargeDeskp: {
+  superLargeDesktop: {
     breakpoint: { max: 4000, min: 3000 },
     items: 5,
   },
-  deskp: {
+  desktop: {
     breakpoint: { max: 3000, min: 1475 },
     items: 3,
   },

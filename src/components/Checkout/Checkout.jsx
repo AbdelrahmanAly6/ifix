@@ -281,7 +281,7 @@ const Checkout = () => {
                                   />
                                 </td>
                                 <td>{item.name}</td>
-                                <td>
+                                <td style={{ textWrap: "nowrap" }}>
                                   <Button
                                     className="btn-info counter-button increase-button me-2"
                                     onClick={() =>
